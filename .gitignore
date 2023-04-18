@@ -205,3 +205,6 @@ dist-ssr
 */.vscode
 */node_modules
 */__pycache__/*
+*/.log
+mingdeapi/logs/mingde.log
+mingdeapi/mingdeapi/__pycache__/__init__.cpython-310.pyc
