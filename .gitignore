@@ -205,6 +205,5 @@ dist-ssr
 */.vscode
 */node_modules
 */__pycache__/*
-*/.log
-mingdeapi/logs/mingde.log
-mingdeapi/mingdeapi/__pycache__/__init__.cpython-310.pyc
+*.log: 忽略所有 .log 文件
+*__pycache__/
