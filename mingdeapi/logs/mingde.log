@@ -1,0 +1,11 @@
+INFO 2023-04-17 15:11:13,912 autoreload run_with_reloader 36031 8486771520 Watching for file changes with StatReloader
+INFO 2023-04-17 15:15:05,060 autoreload trigger_reload 36031 8486771520 /Users/qiaopengjun/miniconda3/envs/mingde/lib/python3.10/site-packages/pymysql/err.py changed, reloading.
+INFO 2023-04-17 15:15:05,582 autoreload run_with_reloader 40088 8486771520 Watching for file changes with StatReloader
+INFO 2023-04-17 15:15:14,222 autoreload run_with_reloader 40711 8486771520 Watching for file changes with StatReloader
+INFO 2023-04-17 15:16:45,045 autoreload trigger_reload 40711 8486771520 /Users/qiaopengjun/Code/mingde/mingdeapi/mingdeapi/__init__.py changed, reloading.
+INFO 2023-04-17 15:16:45,413 autoreload run_with_reloader 40745 8486771520 Watching for file changes with StatReloader
+INFO 2023-04-17 15:17:10,027 autoreload run_with_reloader 40759 8486771520 Watching for file changes with StatReloader
+INFO 2023-04-17 15:18:00,104 basehttp log_message 40759 6202847232 "GET / HTTP/1.1" 200 10731
+WARNING 2023-04-17 15:18:00,152 basehttp log_message 40759 6202847232 "GET /static/admin/css/fonts.css HTTP/1.1" 404 1816
+WARNING 2023-04-17 15:18:00,341 log log_response 40759 6219673600 Not Found: /favicon.ico
+WARNING 2023-04-17 15:18:00,341 basehttp log_message 40759 6219673600 "GET /favicon.ico HTTP/1.1" 404 2113
