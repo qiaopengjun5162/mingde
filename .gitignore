@@ -205,3 +205,5 @@ dist-ssr
 */.vscode
 */node_modules
 */__pycache__/*
+*.log: 忽略所有 .log 文件
+*__pycache__/
