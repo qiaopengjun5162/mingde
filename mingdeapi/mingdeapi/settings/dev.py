@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-7b&q$(h_#-r12p&+il(tnp-qu12z9m6gupf8-uiew$4e$5e+41
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 # Application definition
 
@@ -38,12 +38,16 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
     'rest_framework',
+    'corsheaders',  # cors跨域子应用
     'drf_yasg',
+
     'home',
 ]
 
 MIDDLEWARE = [
+    # 'corsheaders.middleware.CorsMiddleware',  # cors跨域的中间件
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -242,3 +246,13 @@ CACHES = {
 SESSION_ENGINE = "django.contrib.sessions.backends.cache"
 # 设置session保存的位置对应的缓存配置项
 SESSION_CACHE_ALIAS = "session"
+
+# CORS（跨域资源共享）的配置信息:
+# 方案1：
+# CORS_ORIGIN_WHITELIST = (
+#     'http://www.mingde.cn:3000',
+# )
+# CORS_ALLOW_CREDENTIALS = False  # 不允许ajax跨域请求时携带cookie
+
+# 方案2：
+CORS_ALLOW_ALL_ORIGINS = True
