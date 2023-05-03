@@ -533,3 +533,6 @@ INFO 2023-05-03 15:23:32,113 autoreload run_with_reloader 6609 8486771520 Watchi
 INFO 2023-05-03 15:23:36,501 basehttp log_message 6609 6171865088 "GET /home/demo/ HTTP/1.1" 200 2
 INFO 2023-05-03 15:24:21,084 basehttp log_message 6609 10754224128 "GET /home/demo/ HTTP/1.1" 200 2
 INFO 2023-05-03 15:24:25,005 basehttp log_message 6609 10754224128 "GET /home/demo/ HTTP/1.1" 200 2
+INFO 2023-05-03 15:29:13,569 autoreload trigger_reload 6609 8486771520 /Users/qiaopengjun/Code/mingde/mingdeapi/mingdeapi/settings/dev.py changed, reloading.
+INFO 2023-05-03 15:29:14,120 autoreload run_with_reloader 10577 8486771520 Watching for file changes with StatReloader
+INFO 2023-05-03 15:33:52,072 basehttp log_message 10577 6160887808 "GET /home/demo/ HTTP/1.1" 200 2
