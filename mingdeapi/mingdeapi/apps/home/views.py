@@ -1,24 +1,24 @@
-from rest_framework.views import APIView
-from rest_framework.response import Response
-from rest_framework import status
+import constants
+from rest_framework.generics import ListAPIView
+from .models import Nav
+from .serializers import NavModelSerializer
 
-from django_redis import get_redis_connection
+
+class HeaderNavListAPIView(ListAPIView):
+    """
+    头部导航
+    """
+    queryset = Nav.objects.filter(is_delete=False, is_show=True, position=constants.NAV_HEADER).order_by("orders",
+                                                                                                         "-id")[
+               :constants.NAV_HEADER_SIZE]
+    serializer_class = NavModelSerializer
 
 
-# Create your views here.
-class HomeAPIView(APIView):
-    def get(self, request):
-        """
-        测试接口
-        :param request:
-        :return:
-        """
-        print("Home")
-
-        # 直接操作 Redis
-        redis = get_redis_connection("session")
-        # lrange brother 0 -1
-        brother = redis.lrange("brother", 0, -1)
-        print(brother)
-
-        return Response(brother, status.HTTP_200_OK)
+class FooterNavListAPIView(ListAPIView):
+    """
+    脚部导航
+    """
+    queryset = Nav.objects.filter(is_delete=False, is_show=True, position=constants.NAV_FOOTER).order_by("orders",
+                                                                                                         "-id")[
+               :constants.NAV_FOOTER_SIZE]
+    serializer_class = NavModelSerializer
