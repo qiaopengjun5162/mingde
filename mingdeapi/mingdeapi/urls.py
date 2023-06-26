@@ -35,7 +35,7 @@ schema_view = get_schema_view(
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('home/', include('home.urls')),
+    path('', include('home.urls')),
 
     path('docs/', include_docs_urls(title="接口测试平台API文档", description="这个是接口平台的文档")),
 

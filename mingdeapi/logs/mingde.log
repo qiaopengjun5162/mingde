@@ -589,3 +589,65 @@ INFO 2023-06-26 06:06:21,754 basehttp log_message 72868 6125744128 "GET /static/
 INFO 2023-06-26 06:06:21,756 basehttp log_message 72868 6341865472 "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
 INFO 2023-06-26 06:06:21,864 basehttp log_message 72868 6341865472 "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
 INFO 2023-06-26 06:10:05,393 basehttp log_message 72868 6341865472 "GET /home/nav/footer/ HTTP/1.1" 200 6291
+INFO 2023-06-26 06:33:07,834 autoreload run_with_reloader 77402 8510889472 Watching for file changes with StatReloader
+INFO 2023-06-26 09:51:20,421 autoreload run_with_reloader 7836 8272076288 Watching for file changes with StatReloader
+WARNING 2023-06-26 09:51:44,860 log log_response 7836 6325039104 Not Found: /nav/header/
+WARNING 2023-06-26 09:51:44,860 log log_response 7836 6167244800 Not Found: /home/demo/
+WARNING 2023-06-26 09:51:44,861 basehttp log_message 7836 6325039104 "GET /nav/header/ HTTP/1.1" 404 2743
+WARNING 2023-06-26 09:51:44,861 basehttp log_message 7836 6167244800 "GET /home/demo/ HTTP/1.1" 404 2961
+WARNING 2023-06-26 09:52:20,781 log log_response 7836 6341865472 Not Found: /nav/header/
+WARNING 2023-06-26 09:52:20,782 basehttp log_message 7836 6341865472 "GET /nav/header/ HTTP/1.1" 404 2743
+WARNING 2023-06-26 09:52:21,348 log log_response 7836 6341865472 Not Found: /favicon.ico
+WARNING 2023-06-26 09:52:21,349 basehttp log_message 7836 6341865472 "GET /favicon.ico HTTP/1.1" 404 2743
+INFO 2023-06-26 09:56:18,513 basehttp log_message 7836 6167244800 "GET /home/nav/header/ HTTP/1.1" 200 292
+INFO 2023-06-26 10:00:58,184 basehttp log_message 7836 6325039104 "GET /home/nav/header/ HTTP/1.1" 200 292
+WARNING 2023-06-26 10:00:58,185 log log_response 7836 6167244800 Not Found: /home/demo/
+INFO 2023-06-26 10:00:58,187 basehttp log_message 7836 6341865472 "GET /home/nav/footer/ HTTP/1.1" 200 386
+WARNING 2023-06-26 10:00:58,187 basehttp log_message 7836 6167244800 "GET /home/demo/ HTTP/1.1" 404 2961
+WARNING 2023-06-26 10:04:41,023 log log_response 7836 6167244800 Not Found: /nav/footer/
+WARNING 2023-06-26 10:04:41,024 basehttp log_message 7836 6167244800 "GET /nav/footer/ HTTP/1.1" 404 2743
+INFO 2023-06-26 10:04:41,381 autoreload trigger_reload 7836 8272076288 /Users/qiaopengjun/Code/mingde/mingdeapi/mingdeapi/urls.py changed, reloading.
+INFO 2023-06-26 10:04:41,951 autoreload run_with_reloader 8089 8272076288 Watching for file changes with StatReloader
+WARNING 2023-06-26 10:06:47,861 log log_response 8089 6161756160 Not Found: /home/demo/
+WARNING 2023-06-26 10:06:47,861 basehttp log_message 8089 6161756160 "GET /home/demo/ HTTP/1.1" 404 2951
+INFO 2023-06-26 10:06:47,863 basehttp log_message 8089 6195408896 "GET /nav/footer/ HTTP/1.1" 200 386
+INFO 2023-06-26 10:06:47,864 basehttp log_message 8089 6178582528 "GET /nav/header/ HTTP/1.1" 200 292
+INFO 2023-06-26 10:07:54,934 basehttp log_message 8089 6161756160 "GET /nav/footer/ HTTP/1.1" 200 386
+INFO 2023-06-26 10:07:54,935 basehttp log_message 8089 6195408896 "GET /nav/header/ HTTP/1.1" 200 292
+WARNING 2023-06-26 10:07:54,936 log log_response 8089 6178582528 Not Found: /home/demo/
+WARNING 2023-06-26 10:07:54,937 basehttp log_message 8089 6178582528 "GET /home/demo/ HTTP/1.1" 404 2951
+WARNING 2023-06-26 10:09:51,681 log log_response 8089 6178582528 Not Found: /home/demo/
+INFO 2023-06-26 10:09:51,685 basehttp log_message 8089 6161756160 "GET /nav/footer/ HTTP/1.1" 200 386
+WARNING 2023-06-26 10:09:51,686 basehttp log_message 8089 6178582528 "GET /home/demo/ HTTP/1.1" 404 2951
+INFO 2023-06-26 10:09:51,688 basehttp log_message 8089 6195408896 "GET /nav/header/ HTTP/1.1" 200 292
+INFO 2023-06-26 10:10:10,610 basehttp log_message 8089 6178582528 "GET /nav/header/ HTTP/1.1" 200 292
+INFO 2023-06-26 10:10:10,613 basehttp log_message 8089 6161756160 "GET /nav/footer/ HTTP/1.1" 200 386
+WARNING 2023-06-26 10:10:10,614 log log_response 8089 6195408896 Not Found: /home/demo/
+WARNING 2023-06-26 10:10:10,615 basehttp log_message 8089 6195408896 "GET /home/demo/ HTTP/1.1" 404 2951
+INFO 2023-06-26 10:33:06,914 autoreload run_with_reloader 11536 8272076288 Watching for file changes with StatReloader
+INFO 2023-06-26 10:40:17,992 autoreload run_with_reloader 13439 8272076288 Watching for file changes with StatReloader
+INFO 2023-06-26 10:41:03,461 autoreload trigger_reload 13439 8272076288 /Users/qiaopengjun/Code/mingde/mingdeapi/mingdeapi/settings/dev.py changed, reloading.
+INFO 2023-06-26 10:41:03,982 autoreload run_with_reloader 13447 8272076288 Watching for file changes with StatReloader
+INFO 2023-06-26 10:41:25,762 autoreload run_with_reloader 13463 8272076288 Watching for file changes with StatReloader
+INFO 2023-06-26 10:44:17,634 autoreload run_with_reloader 14503 8272076288 Watching for file changes with StatReloader
+WARNING 2023-06-26 10:45:04,729 log log_response 14503 6122024960 Not Found: /
+WARNING 2023-06-26 10:45:04,730 basehttp log_message 14503 6122024960 "GET / HTTP/1.1" 404 2903
+WARNING 2023-06-26 10:45:05,411 log log_response 14503 6122024960 Not Found: /favicon.ico
+WARNING 2023-06-26 10:45:05,411 basehttp log_message 14503 6122024960 "GET /favicon.ico HTTP/1.1" 404 2954
+INFO 2023-06-26 10:45:12,164 basehttp log_message 14503 6155677696 "GET /nav/header/ HTTP/1.1" 200 292
+INFO 2023-06-26 10:45:12,164 basehttp log_message 14503 6172504064 "GET /nav/footer/ HTTP/1.1" 200 386
+INFO 2023-06-26 10:47:25,042 basehttp log_message 14503 6172504064 "GET /nav/header/ HTTP/1.1" 200 292
+INFO 2023-06-26 10:48:01,924 basehttp log_message 14503 6172504064 "GET /nav/header/ HTTP/1.1" 200 292
+INFO 2023-06-26 10:51:26,838 basehttp log_message 14503 6172504064 "GET /nav/header/ HTTP/1.1" 200 292
+INFO 2023-06-26 10:54:28,725 basehttp log_message 14503 6172504064 "GET /nav/header/ HTTP/1.1" 200 292
+INFO 2023-06-26 10:54:52,593 basehttp log_message 14503 6172504064 "GET /nav/header/ HTTP/1.1" 200 292
+INFO 2023-06-26 10:55:16,766 basehttp log_message 14503 6172504064 "GET /nav/header/ HTTP/1.1" 200 292
+INFO 2023-06-26 10:55:46,386 basehttp log_message 14503 6172504064 "GET /nav/header/ HTTP/1.1" 200 292
+INFO 2023-06-26 10:56:10,260 basehttp log_message 14503 6172504064 "GET /nav/header/ HTTP/1.1" 200 292
+INFO 2023-06-26 10:56:53,596 basehttp log_message 14503 6172504064 "GET /nav/header/ HTTP/1.1" 200 292
+INFO 2023-06-26 10:58:01,245 basehttp log_message 14503 6172504064 "GET /nav/header/ HTTP/1.1" 200 292
+INFO 2023-06-26 10:58:01,247 basehttp log_message 14503 6122024960 "GET /nav/footer/ HTTP/1.1" 200 386
+INFO 2023-06-26 11:02:01,456 basehttp log_message 14503 6172504064 "GET /nav/footer/ HTTP/1.1" 200 386
+INFO 2023-06-26 11:02:01,456 basehttp log_message 14503 6122024960 "GET /nav/header/ HTTP/1.1" 200 292
+INFO 2023-06-26 11:03:56,908 basehttp log_message 14503 6122024960 "GET /nav/header/ HTTP/1.1" 200 292
+INFO 2023-06-26 11:03:56,909 basehttp log_message 14503 6172504064 "GET /nav/footer/ HTTP/1.1" 200 386

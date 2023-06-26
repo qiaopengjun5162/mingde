@@ -11,7 +11,7 @@ import Header from "../components/Header.vue"
 import Footer from "../components/Footer.vue"
 
 // 测试CORS的跨域配置是否有问题
-import http from "../utils/http";
+// import http from "../utils/http";
 // import axios from "axios"
 // const http = axios.create()
 
@@ -27,9 +27,9 @@ import http from "../utils/http";
 
 
 // 测试服务端的跨域是否配置成功
-http.get("/home/demo/").then(response=>{
-  console.log(response.data);
-})
+// http.get("/home/demo/").then(response=>{
+//   console.log(response.data);
+// })
 
 </script>
 

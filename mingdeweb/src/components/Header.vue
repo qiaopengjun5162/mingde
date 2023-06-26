@@ -3,14 +3,13 @@
     <div class="header">
       <div class="content">
         <div class="logo">
-          <router-link to="/"><img src="../assets/logo.png" alt=""></router-link>
+          <router-link to="/"><img src="../assets/logo.svg" alt=""></router-link>
         </div>
         <ul class="nav">
-          <li><router-link to="">免费课</router-link></li>
-          <li><router-link to="">项目课</router-link></li>
-          <li><router-link to="">学位课</router-link></li>
-          <li><router-link to="">习题库</router-link></li>
-          <li><router-link to="">明德教育</router-link></li>
+          <li v-for="item in nav.header_nav_list">
+            <a v-if="item.is_http" :href="item.link">{{ item.name }}</a>
+            <router-link v-else :to="item.link">{{ item.name }}</router-link>
+          </li>
         </ul>
         <div class="search-warp">
           <div class="search-area">
@@ -38,8 +37,13 @@
   </div>
 </template>
 
-
 <script setup lang="ts">
+import nav from "../api/nav";
+
+nav.get_header_nav().then(response => {
+  nav.header_nav_list = response.data;
+  console.log("11", nav.header_nav_list);
+});
 
 </script>
 
